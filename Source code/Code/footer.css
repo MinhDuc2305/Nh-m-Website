@@ -10,8 +10,9 @@ body{
 /* footer====================================================== */
 
 footer {
-    background-color:#86b2c4;
+    background-color:#f0f2f3;
     padding: 96px 135px 0;
+    
   }
   
   .footer .row {
@@ -23,6 +24,10 @@ footer {
   .footer .row .column {
     width: 21.6%;
   }
+  .footer .row .column h2{
+    color: #3795d5;
+  }
+  
   
   .footer .row .column:first-child {
     width: 35%;
@@ -47,7 +52,7 @@ footer {
     padding-right: 48px;
     display: inline-block;
     border-bottom: 1px solid #59554b;
-    color: #fff;
+    color: #58a0d7;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
