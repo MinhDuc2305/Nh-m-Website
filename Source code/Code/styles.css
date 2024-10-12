@@ -43,6 +43,7 @@ a{
     color: var(--logo-color);
     font-size: 1.2 rem;
 }
+
 #header-menu {
     flex:2;
     list-style: none;
@@ -51,6 +52,10 @@ a{
     justify-content:space-around ;
     flex-wrap: wrap;
 
+}
+#header-menu a:hover{
+    color: red; /* Màu link khi di chuột qua */
+    
 }
 #letter-info {
     flex: 1;
@@ -62,11 +67,11 @@ a{
 
 #letter-info > button {
     border: none;
-    padding: 6px;
+    padding: 7px;
     color: var(--primary-color);
     font-weight: 500;
     border-radius: 6px;
-    width: 70px;
+    width: 100px;
     background-color: var(--background-color);
     flex-wrap: wrap;
 }
