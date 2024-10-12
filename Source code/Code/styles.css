@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    font-size: 12px;
+}
+:root {
+    --primary-color:#a8cef0;
+    --secondary-color:#263238;
+    --info-color: #2194f3;
+    --background-color:#f2f4f7;
+    --logo-color:#2099e9;
+
+}
+header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-color);
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    flex-basis: 4%;
+    flex:1;
+    
+}
+#logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--logo-color);
+    font-size: 1.2 rem;
+}
+#header-menu {
+    flex:2;
+    list-style: none;
+    font-size: 1.1 rem;
+    display: flex;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+
+}
+#letter-info {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#letter-info > button {
+    border: none;
+    padding: 6px;
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 6px;
+    width: 70px;
+    background-color: var(--background-color);
+    flex-wrap: wrap;
+}
+
+#letter-info > button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 476px){
+    header{
+        flex-direction: column;
+        gap:8px;
+    }
+    
+    
+}
+
