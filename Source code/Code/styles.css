@@ -11,10 +11,12 @@ body{
 }
 :root {
     --primary-color:#a8cef0;
-    --secondary-color:#263238;
-    --info-color: #2194f3;
+    --secondary-color:#2585b5;
+    --info-color: #409fec;
     --background-color:#f2f4f7;
-    --logo-color:#2099e9;
+    --logo-color:#3795d5;
+    --bk-color:#a6d7ea;
+    --white-color:#f9f9f9;
 
 }
 header{
@@ -23,15 +25,16 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: var(--background-color);
+    height: 60px;
 }
 a{
     text-decoration: none;
 }
 #logo{
     display: flex;
+    
     margin-left: 30px;
     align-items: center;
-    flex-basis: 4%;
     flex:1;
     
 }
@@ -42,43 +45,52 @@ a{
     text-decoration: none;
     color: var(--logo-color);
     font-size: 1.2 rem;
+    
 }
-
+#logo a:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách cho thẻ a cuối cùng */
+}
 #header-menu {
     flex:2;
     list-style: none;
-    font-size: 1.1 rem;
+    font-size:smaller;
     display: flex;
+    font-weight: 655;
     justify-content:space-around ;
     flex-wrap: wrap;
 
 }
-#header-menu a:hover{
-    color: red; /* Màu link khi di chuột qua */
+#header-menu a{
+    color: var(--secondary-color);
     
 }
+#header-menu a:hover{
+    color: var(--info-color);
+    
+}
+
 #letter-info {
     flex: 1;
     display: flex;
     justify-content: center;
-    gap: 15px;
     flex-wrap: wrap;
 }
 
 #letter-info > button {
     border: none;
     padding: 7px;
-    color: var(--primary-color);
+    color: var(--white-color);
     font-weight: 500;
     border-radius: 6px;
-    width: 100px;
-    background-color: var(--background-color);
+    width: 120px;
+    font-size:small;
+    background-color: var(--bk-color);
     flex-wrap: wrap;
 }
 
 #letter-info > button:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--info-color);
+    color: var(--white-color);
     cursor: pointer;
 }
 
