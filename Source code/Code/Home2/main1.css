@@ -19,7 +19,7 @@ main {
     left: 0;
     width: 55%;
     height: calc(900px - 80px); /* Chiều cao điều chỉnh cho left */
-    background: url('../assets/img/Main-top-Image/Anh\ main\ fix.png') center center;
+    background: url('../assets/img/Main-top-Image/Anh\ main\ fix.png') no-repeat center center;
     background-size: cover;
     background-position: 0 35%;
 }
@@ -40,7 +40,7 @@ main {
     
     width: 100%;
     height: 400px;
-    background: url('../assets/img/Main-top-Image/top-image.jpg') center center;
+    background: url('../assets/img/Main-top-Image/top-image.jpg') no-repeat center center;
     background-size: contain;
     background-position:  50% 100%;
 }
