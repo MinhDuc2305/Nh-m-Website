@@ -13,7 +13,7 @@
     --primary-color:#a8cef0;
     --secondary-color:#2585b5;
     --info-color: #409fec;
-    --background-color:#f2f4f7;
+    --background-color:white;
     --logo-color:#3795d5;
     --bk-color:#a6d7ea;
     --white-color:#f9f9f9;
@@ -25,7 +25,7 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: var(--background-color);
-    height: 45px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,9 +40,7 @@ a{
 }
 #logo{
     display: flex;
-    
-    margin-left: 30px;
-    align-items: center;
+    margin-left: 40px;
     flex:1;
     
     
@@ -53,7 +51,7 @@ a{
     align-items: center;
     text-decoration: none;
     color: var(--logo-color);
-    font-size: 1.2 rem;
+    font-size:  18px;
     
 }
 #logo a:last-child {
@@ -67,7 +65,7 @@ a{
     font-weight: 655;
     justify-content:space-around ;
     flex-wrap: wrap;
-    font-size: 13px;
+    font-size: 14px;
 }
 #header-menu a{
     color: var(--secondary-color);
@@ -88,10 +86,10 @@ a{
     border: none;
     padding: 7px;
     color: var(--white-color);
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 6px;
-    width: 90px;
-    font-size:x-small;
+    width: 115px;
+    font-size:14px;
     background-color: var(--bk-color);
     flex-wrap: wrap;
 }
