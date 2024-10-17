@@ -30,7 +30,7 @@ main {
     box-sizing: border-box;
     padding: 0;
     flex: 1;
-    background: linear-gradient(to bottom, white 20%, #cbdce3 80%);
+    background: linear-gradient(to bottom, white 20%, #a9d4e6 80%);
 
     
     min-height: calc(900px - 80px); /* Đặt chiều cao tối thiểu bằng chiều cao của phần left */
@@ -119,12 +119,14 @@ main {
 }
 
 .people {
-    background-image: url('https://marketplace.canva.com/EAEKwGau8wo/1/0/1600w/canva-m%C3%A0u-be-v%C3%A0-m%C3%A0u-ph%E1%BA%A5n-h%C3%ACnh-kh%E1%BB%91i-h%C3%A0i-h%C6%B0%E1%BB%9Bc-%26-c%C3%B3-th%E1%BB%83-chia-s%E1%BA%BB-h%C3%ACnh-n%E1%BB%81n-%E1%BA%A3o-PsWZBQ8hh6E.jpg'); /* Thay thế bằng URL của ảnh nền */
+    background: linear-gradient(to bottom,#32c2df ,white);
+    background-color: #e6eaed;
     background-size: cover;
     background-position: center;
     padding: 40px 0;
     text-align: center; /* Căn giữa chữ trong footer */
     color: rgb(8, 7, 7);
+    border-bottom: 3px solid #7fd2e3;
 }
 
 .bonus-container {

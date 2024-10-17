@@ -6,6 +6,7 @@
     <title>Foody | Home</title>
     <link rel="stylesheet" href="../Css-Header-Footer/header.css" />
     <link rel="stylesheet" href="../Css-Header-Footer/footer.css" />
+    <link rel="stylesheet" href="../Css-Header-Footer/button-newlet.css">
   </head>
   <body>
     <header>
@@ -14,126 +15,146 @@
           <img
             src="../assets/icon/logo.svg"
             alt="Lesson"
-            class="logo"
-          />
+            class="logo" />
         </a>
-        <a href="#"><h2>Foody</h2></a>
+        <a href="../Home2/main1.html"><h2>Foody</h2></a>
       </div>
-      
+
       <nav id="header-menu">
-    
-        <li><a href="../1_Traditional_Recipes/main2.html">TRADITIONAL RECIPES</a></li>
+
+        <li><a href="../1_Traditional_Recipes/main2.html">TRADITIONAL
+            RECIPES</a></li>
         <li><a href="../2_Street_Foods/main3.html">STREET FOODS</a></li>
         <li><a href="../3_Local_Foods/main4.html">LOCAL FOODS</a></li>
         <li><a href="../4_About_Us/main5.html">ABOUT US</a></li>
 
       </nav>
       <div id="letter-info">
-        <button>NEWSLETTER</button>
+        <button id="subscribeBtn">NEWSLETTER</button>
       </div>
     </header>
+
     <!-- ===================================================MAIN====================================================================== -->
     <main>
 
-
     </main>
     <!-- ===================================================MAIN====================================================================== -->
+    <!-- Modal cho nhập email -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <h2>Subscribe for News</h2>
+        <input type="email" id="emailInput" placeholder="Enter your email"
+          required />
+        <p id="message" style="color: red;"></p>
+        <button id="submitBtn">Send</button>
+      </div>
+    </div>
     <footer class="footer">
       <div class="main-content">
         <div class="row">
-          
+
           <div class="column">
-            <img
-              src="../assets/icon/logo.svg"
-              alt="Lesson."
-              class="logo"
-            />
-            <h2>  Foody </h2>
-            <p class="desc">
-              Ready to eat? Trust us. With Lesson, study becomes a lot easier
-              with us.
+            <nav class="logo-style">
+              <a href="../Home2/main1.html">
+                <img src="../assets/icon/logo.svg" alt="Lesson." class="logo" />
+              </a>
+              <a href="../Home2/main1.html">
+                <h2>Foody</h2>
+              </a>
+            </nav>
+            <p class="desc1">
+              Ready to explore Vietnamese cuisine?
             </p>
+            <p class="desc2">Trust us. We’ll take you to a wonderful culinary
+              garden.</p>
             <div class="socials">
-              <a href="">
+              <a href="https://x.com/i/flow/single_sign_on">
                 <img
                   src="../assets/icon/twitter.svg"
                   alt="twitter"
-                  class="icon"
-                />
+                  class="icon" />
               </a>
-              <a href="">
+              <a href="https://www.facebook.com/nmd235.duke">
                 <img
                   src="../assets/icon/Facebook.svg"
                   alt="facebook"
-                  class="icon"
-                />
+                  class="icon" />
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/quynhnhu2000hd/">
                 <img
                   src="../assets/icon/instagram.svg"
                   alt="instagram"
-                  class="icon"
-                />
+                  class="icon" />
               </a>
             </div>
           </div>
-         
+
           <div class="column">
-            <h3 class="title">Group</h3>
+            <h3 class="title"><a href="../6_Group/main7.html">GROUP</a></h3>
             <ul class="list">
               <li>
-                <a href="#!">About Us</a>
+                <p>About Us</p>
               </li>
               <li>
-                <a href="#!">Features</a>
+                <p>Features</p>
               </li>
               <li>
-                <a href="#!">Our Pricing</a>
+                <p>Our Pricing</p>
               </li>
               <li>
-                <a href="#!">Latest News</a>
+                <p>Latest News</p>
               </li>
             </ul>
+
           </div>
-          
+
           <div class="column">
-            <h3 class="title">Support</h3>
+            <h3 class="title"><a href="../7_Support/main8.html">SUPPORT</a></h3>
             <ul class="list">
               <li>
-                <a href="#!">FAQ’s</a>
+                <p>FAQ’s</p>
               </li>
               <li>
-                <a href="#!">Terms & Conditions</a>
+                <p>Terms & Conditions</p>
               </li>
               <li>
-                <a href="#!">Privacy Policy</a>
+                <p>Privacy Policy</p>
               </li>
               <li>
-                <a href="#!">Contact Us</a>
+                <p>Contact Us</p>
               </li>
             </ul>
+
           </div>
-          
+
           <div class="column">
-            <h3 class="title">Address</h3>
+            <h3 class="title">ADDRESS</h3>
             <ul class="list">
               <li>
-                <a href="#!"><strong>Location:</strong>Dai hoc CMC</a>
+                <p><strong>Location:</strong> CMC University</p>
               </li>
               <li>
-                <a href="#!"><strong>Email:</strong>kaiofyou@gmail.com</a>
+                <p><strong>Email:</strong> kaiofyou@gmail.com</p>
               </li>
               <li>
-                <a href="#!"><strong>Phone:</strong>1234567JQK</a>
+                <p><strong>Phone:</strong> 9999.999.999</p>
               </li>
+
             </ul>
           </div>
         </div>
 
-        <div class="copyright">
-          <p><em>Food is a part of the soul because it reflects the beautiful spiritual values of the chefs.</em></p>
-        </div>
       </div>
     </footer>
+
+    <div class="after-footer">
+      <div class="copyright">
+        <p>Food is a part of the soul because it reflects the beautiful
+          spiritual values of the chefs.</p>
+      </div>
+    </div>
+
+    <script src="../Css-Header-Footer/script-button-newlet.js"></script>
   </body>
 </html>

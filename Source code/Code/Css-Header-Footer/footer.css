@@ -3,23 +3,23 @@ html {
 }
 
 footer {
+  
+  background: url(../assets/img/Main-top-Image/main-footer.jpg);
 
-  background: url('../assets/img/Main-top-Image/main-footer.jpg') ;
-  padding: 93px 150px ;
+  padding: 82px 150px ;
   background-size: cover;
   background-position: 0 bottom;
-  border-bottom: 2px solid #c4e6f1;
+  border-bottom: 2px solid #4596b0;
 
 }
 
 .footer .row {
-  padding-bottom: 40px;
-  
   display: flex;
 }
 
 .footer .row .column {
   width: 15%;
+ 
 }
 
 .footer .row .column h2 {
@@ -29,7 +29,7 @@ footer {
 
 
 .footer .row .column:first-child {
-  width: 32%;
+  width: 35%;
 }
 .footer .column .logo-style {
   display: flex;
@@ -51,6 +51,7 @@ footer {
   display: flex;
   gap: 19px;
   margin-top: 20px;
+  margin-left: 140px;
 }
 
 .footer .title {
@@ -65,7 +66,7 @@ footer {
   font-size: 15px;
 }
 .footer .title :hover {
-  border-bottom: 3px solid #d8a21b;
+  border-bottom: 4px solid #e3c068;
 }
 
 .footer .list {
@@ -76,7 +77,7 @@ footer {
 .footer .list p {
   display: inline-block;
   margin-bottom: 1px;
-  color: #918c7f;
+  color: #7b7970;
   font-size: 14px;
   font-family:  'Arial Narrow', Arial, sans-serif;
   line-height: 1.85;

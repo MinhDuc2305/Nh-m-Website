@@ -6,6 +6,7 @@
     <title>Foody | Home</title>
     <link rel="stylesheet" href="../Css-Header-Footer/header.css" />
     <link rel="stylesheet" href="../Css-Header-Footer/footer.css" />
+    <link rel="stylesheet" href="../Css-Header-Footer/button-newlet.css">
   </head>
   <body>
     <header>
@@ -29,15 +30,26 @@
 
       </nav>
       <div id="letter-info">
-        <button>NEWSLETTER</button>
+        <button id="subscribeBtn">NEWSLETTER</button>
       </div>
     </header>
+
     <!-- ===================================================MAIN====================================================================== -->
     <main>
 
     </main>
     <!-- ===================================================MAIN====================================================================== -->
-     
+    <!-- Modal cho nhập email -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <h2>Subscribe for News</h2>
+        <input type="email" id="emailInput" placeholder="Enter your email"
+          required />
+        <p id="message" style="color: red;"></p>
+        <button id="submitBtn">Send</button>
+      </div>
+    </div>
     <footer class="footer">
       <div class="main-content">
         <div class="row">
@@ -51,10 +63,11 @@
                 <h2>Foody</h2>
               </a>
             </nav>
-            <p class="desc1" >
-              Ready to explore Vietnamese cuisine? 
+            <p class="desc1">
+              Ready to explore Vietnamese cuisine?
             </p>
-            <p class="desc2">Trust us. We’ll take you to a wonderful culinary garden.</p>
+            <p class="desc2">Trust us. We’ll take you to a wonderful culinary
+              garden.</p>
             <div class="socials">
               <a href="https://x.com/i/flow/single_sign_on">
                 <img
@@ -132,14 +145,16 @@
           </div>
         </div>
 
-        
       </div>
     </footer>
-    <div class ="after-footer">
+
+    <div class="after-footer">
       <div class="copyright">
         <p>Food is a part of the soul because it reflects the beautiful
-            spiritual values of the chefs.</p>
+          spiritual values of the chefs.</p>
       </div>
     </div>
+
+    <script src="../Css-Header-Footer/script-button-newlet.js"></script>
   </body>
 </html>
