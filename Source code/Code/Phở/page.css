@@ -5,24 +5,27 @@
 
 .main {
   max-width: 800px;
-  margin: 0px auto;
+  margin: 0 auto; /* Căn giữa */
+  padding: 0 15px; /* Thêm padding hai bên */
 }
+
 .image img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
+
 .info {
   display: flex;
-  /* align-items: center; */
-  /* Căn giữa theo trục dọc */
   justify-content: space-between; /* Đảm bảo khoảng cách hợp lý giữa hình ảnh và nội dung */
   padding: 30px;
 }
+
 .image {
   flex-shrink: 0; /* Đảm bảo kích thước hình ảnh không thay đổi khi thu nhỏ */
 }
+
 .thongtin {
   padding: 10px;
   flex-grow: 1; /* Cho phép phần thông tin này chiếm hết không gian còn lại */
@@ -43,8 +46,6 @@
   height: auto; /* Giữ tỷ lệ khung hình */
   display: block; /* Đảm bảo không có khoảng trống bên dưới hình ảnh */
   margin-top: 20px;
-  /* margin-bottom: 20px; */
-  /* Khoảng cách giữa hình ảnh và văn bản */
 }
 
 .highlight {
@@ -96,4 +97,47 @@ figcaption {
 
 #submit-comment:hover {
   background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column; /* Đặt các phần theo chiều dọc cho màn hình nhỏ */
+    padding: 20px; /* Giảm padding cho màn hình nhỏ */
+  }
+
+  .image img {
+    width: 60px; /* Kích thước nhỏ hơn cho hình ảnh trên màn hình nhỏ */
+    height: 60px;
+  }
+
+  .thongtin {
+    padding-left: 10px; /* Giảm khoảng cách giữa ảnh và thông tin */
+  }
+
+  .baiviet {
+    padding-right: 20px; /* Giảm padding cho màn hình nhỏ */
+  }
+
+  .highlight {
+    font-size: 24px; /* Giảm kích thước chữ trên màn hình nhỏ */
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0 10px; /* Giảm padding cho màn hình nhỏ hơn */
+  }
+
+  .dieuhuong {
+    padding: 15px; /* Giảm padding cho tiêu đề */
+  }
+
+  .comment-section {
+    padding: 10px; /* Giảm padding cho phần bình luận */
+  }
+
+  #submit-comment {
+    padding: 10px; /* Tăng kích thước nút trên màn hình nhỏ */
+  }
 }
