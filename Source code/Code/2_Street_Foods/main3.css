@@ -1,69 +1,93 @@
 .street-food {
-    text-align: center;
-    padding-top: 100px;
-    color: rgb(12, 92, 92);
-  }
-  .street-food p {
-    font-size: large;
-  }
-  .iconVN1 {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-  }
-  
+  text-align: center;
+  padding-top: 100px;
+  color: rgb(12, 92, 92);
+}
+
+.street-food p {
+  font-size: large;
+}
+
+.iconVN1 {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.main1 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Thay đổi để tự động lấp đầy không gian */
+  gap: 30px;
+  padding: 30px;
+}
+
+.card1 {
+  background-color: #b6e2f4;
+  border-radius: 8px;
+  border: 2px solid #121213;
+  overflow: hidden;
+  display: flex; /* Sử dụng flexbox */
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px; /* Đặt chiều cao cố định cho các thẻ card */
+}
+
+.card1:hover {
+  transform: scale(1.05);
+}
+
+.card1 img {
+  width: 100%;
+  height: 200px; /* Chiều cao hình ảnh */
+  object-fit: cover; /* Giữ tỉ lệ hình ảnh */
+}
+
+.text1 {
+  padding: 20px;
+  flex-grow: 1; /* Để nội dung lấp đầy không gian còn lại */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các phần nội dung */
+}
+
+.text1 h3 {
+  color: #12436e;
+  font-size: 14px;
+}
+
+.text1 h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #121213;
+}
+
+.text1 p {
+  color: #555;
+  font-size: 12px;
+}
+
+/* Responsive cho các thẻ card */
+@media (max-width: 768px) {
   .main1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 30px;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột trên màn hình nhỏ */
   }
-  .card1 {
-    background-color: #b6e2f4;
-    border-radius: 8px;
-    border: 2px solid #121213;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .main1 {
+    grid-template-columns: 1fr; /* 1 cột trên màn hình rất nhỏ */
   }
-  .card1:hover {
-    transform: scale(1.05);
-  }
-  .card1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .text1 {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .text1 h3 {
-    color: #12436e;
-    font-size: 14px;
-  }
-  
-  .text1 h2 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #121213;
-  }
-  
-  .text1 p {
-    color: #555;
-    font-size: 12px;
-  }
+}
